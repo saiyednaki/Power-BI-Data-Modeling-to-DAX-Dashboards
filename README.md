@@ -276,11 +276,11 @@ AdventureWorks-PowerBI/
 
 ---
 
-# English
-
 # Endergebnis
 
 Dieses Projekt demonstriert den vollständigen Business-Intelligence-Lebenszyklus mit Microsoft Power BI – von der Aufnahme und Transformation der Rohdaten bis hin zu fortgeschrittener Analyse und der Entwicklung von Dashboards für Führungskräfte.
+
+# English
 
 ## Business Problem
 
