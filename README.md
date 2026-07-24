@@ -1,202 +1,287 @@
-# Power-BI-Data-Modeling-to-DAX-Dashboards
+# AdventureWorks Business Intelligence Dashboard | End-to-End Power BI Project
 
-# Deutsch
+## Business Problem
 
-Ein strukturierter, praxisorientierter Lernpfad, der den gesamten Power BI-Workflow abdeckt – von der Verbindung und Aufbereitung von Rohdaten in Power Query über den Aufbau eines relationalen Datenmodells und die Erstellung von DAX-Berechnungen bis hin zur Gestaltung interaktiver Berichte. Das Projekt verwendet die AdventureWorks-Datensätze.
+AdventureWorks is a global retail and manufacturing company that generates data from multiple business functions including sales, customers, products, territories, and returns.
 
-**Überblick**
+The company faces several challenges:
 
-Dieses Repository dokumentiert einen vierstufigen Kurs, der Sie von Rohdaten zu einem vollständig interaktiven, produktionsreifen Power BI-Bericht führt. Jede Stufe baut auf der vorherigen auf: Sie bereiten Daten mit Power Query auf, modellieren sie korrekt, fügen DAX-Berechnungen hinzu und visualisieren sie schließlich in ansprechenden, interaktiven Dashboards.
+- Business data is stored across multiple disconnected sources.
+- Reports are created manually, resulting in slow decision-making.
+- Sales managers lack real-time visibility into revenue, profit, and product performance.
+- Executives cannot easily identify sales trends, customer behaviour, or regional performance.
+- There is no centralised dashboard for monitoring business KPIs.
 
-**Stufe 1: Daten verbinden und aufbereiten**
+The objective is to transform raw business data into a scalable Business Intelligence solution that enables data-driven decision making.
 
-Schwerpunkt: Erstellung automatisierter Workflows zum Extrahieren, Bereinigen, Transformieren und Laden von Daten mit Power Query.
+---
 
-- Datenkonnektoren
-- Speicher- und Importmodi
-- Abfragebearbeitungswerkzeuge
-- Tabellentransformationen
-- Datenbankverbindung
-- Datenextraktion aus dem Web
-- QA- und Profiling-Werkzeuge
-- Werkzeuge für Text, Zahlen, Datum und Uhrzeit
-- Gleitende Kalender
-- Index- und bedingte Spalten
-- Gruppierung und Aggregation
-- Pivotierung und Unpivotierung
-- Zusammenführen und Anhängen von Abfragen
-- Datenquellenparameter
-- Import von Excel-Modellen
+# 🎯 Project Objective
 
-**Phase 2: Erstellung eines relationalen Datenmodells**
+Develop a complete Power BI reporting solution by following the entire BI workflow:
 
-Behandelt Best Practices der Datenmodellierung und die Grundlagen für den Aufbau des AdventureWorks-Datenmodells von Grund auf.
+- Connect and transform raw data
+- Build an optimized relational data model
+- Create business metrics using DAX
+- Design interactive executive dashboards
+- Publish a production-ready report
 
-- Datenbanknormalisierung
-- Faktentabellen und Dimensionstabellen
-- Primär- und Fremdschlüssel
-- Stern- und Schneeflockenschemata
-- Aktive und inaktive Beziehungen
-- Kardinalität von Beziehungen
-- Filterkontext und -ablauf
-- Bidirektionale Filter
-- Modelllayouts
-- Datenformate und -kategorien
-- Hierarchien
+---
 
-**Phase 3: Hinzufügen berechneter Felder mit DAX**
+# 🏗 Solution Architecture
 
-Einführung von Data Analysis Expressions (DAX), einschließlich berechneter Spalten, Kennzahlen, Zeilen-/Filterkontext und Zeitinformationen.
+```
+Raw Data
+    │
+    ▼
+Power Query (ETL)
+    │
+    ▼
+Data Model (Star Schema)
+    │
+    ▼
+DAX Business Logic
+    │
+    ▼
+Interactive Dashboards
+    │
+    ▼
+Power BI Service
+```
 
-- DAX vs. M
-- Berechnete Spalten und Kennzahlen
-- Implizite, explizite und schnelle Kennzahlen
-- Berechnungsschritte für Kennzahlen
-- DAX-Syntax und -Operatoren
-- Mathematische und statistische Funktionen
-- Bedingte und logische Funktionen
-- Die SWITCH-Funktion
-- Textfunktionen
-- Datums- und Zeitfunktionen
-- Die RELATED-Funktion
-- CALCULATE, FILTER und ALL
-- Iterator-Funktionen (X)
-- Zeitintelligenzmuster
+---
 
-**Phase 4: Datenvisualisierung mit Berichten**
+# 🚀 Project Workflow
 
-Erwecken Sie die Daten mit Dashboards zum Leben – erstellen und formatieren Sie Diagramme und fügen Sie Interaktivität hinzu.
+## Stage 1 — Data Extraction & Transformation (Power Query)
 
-- Best Practices für Datenvisualisierung
-- Dashboard-Design-Framework
-- Karten & KPIs
-- Liniendiagramme, Trendlinien & Prognosen
-- Objektbasierte Formatierung
-- Tabellen- & Matrixvisualisierungen
-- Bedingte Formatierung
-- Top-N-Filterung
-- Kartenvisualisierungen
-- Drill-Up, Drill-Down & Drillthrough
-- Berichtsschnitte & Interaktionen
-- Lesezeichen & Seitennavigation
-- Numerische Parameter & Felder
-- Benutzerdefinierte Tooltips
-- Importieren benutzerdefinierter Visualisierungen
-- Verwalten & Anzeigen von Rollen (RLS)
-- Mobile Layouts
-- Veröffentlichen im Power BI-Dienst
+### Business Challenge
 
-**Verwendete Tools**
+Business information comes from multiple sources with inconsistent formatting, duplicate records, missing values, and unnecessary columns. Before analysis, the data must be cleaned and standardized.
 
-- Power BI Desktop
-- Power Query (M-Sprache)
-- DAX (Data Analysis Expressions)
-- DAX Studio
+### Solution
 
-**Ergebnisse**
+Using **Power Query**, the data was transformed through an automated ETL process.
 
-- Daten aus verschiedenen Quellen mit Power Query verbinden und bereinigen
-- Ein gut strukturiertes relationales Datenmodell gemäß den Best Practices für Sternschemata entwerfen
-- Berechnete Spalten, Measures und Zeitintelligenz-Ausdrücke in DAX schreiben
-- Interaktive, gut formatierte Power BI-Dashboards erstellen
+### Tasks Performed
 
-# English 
+- Connected to multiple data sources
+- Imported AdventureWorks datasets
+- Cleaned and transformed raw data
+- Removed duplicates
+- Corrected data types
+- Split and merged columns
+- Created conditional columns
+- Built rolling calendar tables
+- Grouped and aggregated records
+- Pivoted and unpivoted data
+- Merged and appended queries
+- Created reusable parameters
+- Performed data quality checks
 
-A structured, hands-on learning path covering the full Power BI workflow — from connecting and shaping raw data in Power Query, to building a relational data model, writing DAX calculations, and designing interactive reports. The project uses the AdventureWorks datasets
+### Outcome
 
-**Overview**
+A fully automated and repeatable data preparation pipeline ready for analysis.
 
-This repository documents a 4-stage curriculum designed to take you from raw data to a fully interactive, production-ready Power BI report. Each stage builds on the last: you'll shape data with Power Query, model it properly, layer on DAX calculations, and finally visualise it in polished, interactive dashboards.
+---
 
-**Stage 1: Connecting & Shaping Data**
+## Stage 2 — Data Modeling
 
-Focused on building automated workflows to extract, clean, transform, and load data using Power Query.
+### Business Challenge
 
-- Data connectors
-- Storage & import modes
-- Query editing tools
-- Table transformations
-- Connecting to a database
-- Extracting data from the web
-- QA & profiling tools
-- Text, numerical, date & time tools
-- Rolling calendars
-- Index & conditional columns
-- Grouping & aggregating
-- Pivoting & unpivoting
-- Merging & appending queries
-- Data source parameters
-- Importing Excel models
-  
-**Stage 2: Creating a Relational Data Model**
+Without a proper data model, reports become slow, inaccurate, and difficult to maintain.
 
-Covers data modelling best practices and the foundations of building the AdventureWorks data model from the ground up.
+### Solution
 
-- Database normalisation
-- Fact & dimension tables
-- Primary & foreign keys
-- Star & snowflake schemas
-- Active & inactive relationships
-- Relationship cardinality
-- Filter context & flow
-- Bi-directional filters
-- Model layouts
-- Data formats & categories
-- Hierarchies
-  
-**Stage 3: Adding Calculated Fields with DAX**
+Designed a scalable relational model following Microsoft Power BI best practices.
 
-Introduces Data Analysis Expressions (DAX), including calculated columns, measures, row/filter context, and time intelligence.
+### Tasks Performed
 
-- DAX vs. M
-- Calculated columns & measures
-- Implicit, explicit & quick measures
-- Measure calculation steps
-- DAX syntax & operators
-- Math & stats functions
-- Conditional & logical functions
-- The SWITCH function
-- Text functions
-- Date & time functions
-- The RELATED function
-- CALCULATE, FILTER & ALL
-- Iterator (X) functions
-- Time intelligence patterns
-  
-**Stage 4: Visualising Data with Reports**
+- Built Fact and Dimension tables
+- Created Primary and Foreign Key relationships
+- Designed a Star Schema
+- Configured relationship cardinality
+- Managed active and inactive relationships
+- Controlled filter direction
+- Organized model layout
+- Added hierarchies
+- Configured data categories and formats
 
-Brings the data to life with dashboards — building and formatting charts, and adding interactivity.
+### Outcome
 
-- Data viz best practices
-- Dashboard design framework
-- Cards & KPIs
-- Line charts, trend lines & forecasts
-- On-object formatting
-- Table & matrix visuals
-- Conditional formatting
-- Top N filtering
-- Map visuals
-- Drill up, drill down & drillthrough
-- Report slicers & interactions
-- Bookmarks & page navigation
-- Numeric & fields parameters
-- Custom tooltips
-- Importing custom visuals
-- Managing & viewing roles (RLS)
-- Mobile layouts
-- Publishing to Power BI Service
+An optimized semantic model that supports fast queries and accurate reporting.
 
-**Tools Used** 
+---
 
-- Power BI Desktop
-- Power Query (M language)
-- DAX (Data Analysis Expressions)
-- DAX Studio 
+## Stage 3 — Business Calculations (DAX)
 
-**Outcomes**
+### Business Challenge
 
-- Connect and clean data from multiple sources using Power Query
-- Design a well-structured relational data model following star schema best practices
-- Write DAX calculated columns, measures, and time intelligence expressions
-- Build interactive, well-formatted Power BI reports and dashboards
-- Apply row-level security and publish reports to the Power BI Service
+Raw data alone cannot answer important business questions such as:
+
+- Total Sales
+- Profit
+- Growth Rate
+- Previous Year Performance
+- Running Totals
+- Customer Lifetime Value
+- KPI comparisons
+
+### Solution
+
+Implemented business logic using **Data Analysis Expressions (DAX).**
+
+### Tasks Performed
+
+- Created calculated columns
+- Built reusable measures
+- Implemented explicit measures
+- Used variables for optimization
+- Applied CALCULATE()
+- Used FILTER()
+- Applied ALL()
+- Built iterator functions (SUMX, AVERAGEX, etc.)
+- Created Time Intelligence calculations
+- Implemented SWITCH() logic
+- Used RELATED()
+- Created conditional metrics
+
+### Outcome
+
+Dynamic business KPIs that respond instantly to user selections.
+
+---
+
+## Stage 4 — Dashboard Development
+
+### Business Challenge
+
+Decision makers require clear and interactive dashboards instead of static reports.
+
+### Solution
+
+Designed executive-level dashboards using Power BI visualization best practices.
+
+### Dashboard Features
+
+- KPI Cards
+- Sales Performance Dashboard
+- Customer Analytics
+- Product Performance
+- Geographic Sales Analysis
+- Interactive Maps
+- Trend Analysis
+- Forecasting
+- Drill Down
+- Drill Through
+- Dynamic Slicers
+- Bookmarks
+- Navigation Buttons
+- Custom Tooltips
+- Conditional Formatting
+- Top N Analysis
+- Mobile Layout
+- Row-Level Security (RLS)
+- Published to Power BI Service
+
+### Outcome
+
+Interactive dashboards enabling users to explore business performance without technical expertise.
+
+---
+
+# 🛠 Technologies Used
+
+| Tool | Purpose |
+|------|---------|
+| Power BI Desktop | Dashboard Development |
+| Power Query (M) | Data Transformation |
+| DAX | Business Calculations |
+| DAX Studio | Performance Analysis |
+| AdventureWorks Dataset | Sample Business Data |
+
+---
+
+# 📈 Key Business Outcomes
+
+This solution enables stakeholders to:
+
+- Monitor company-wide sales performance
+- Identify top-performing products
+- Analyze customer purchasing behavior
+- Compare regional performance
+- Track KPIs in real time
+- Discover long-term sales trends
+- Improve decision-making with interactive dashboards
+- Secure data using Row-Level Security
+- Share reports through Power BI Service
+
+---
+
+# 📚 Skills Demonstrated
+
+### Data Preparation
+
+- ETL Development
+- Data Cleaning
+- Data Transformation
+- Query Optimization
+- Power Query (M)
+
+### Data Modeling
+
+- Star Schema
+- Fact & Dimension Modeling
+- Relationship Management
+- Data Normalization
+- Semantic Modeling
+
+### Data Analysis
+
+- DAX Measures
+- Calculated Columns
+- Time Intelligence
+- KPI Development
+- Business Metrics
+
+### Data Visualization
+
+- Executive Dashboards
+- Interactive Reports
+- Drillthrough
+- Bookmarks
+- Dynamic Filtering
+- Mobile Optimization
+
+---
+
+# 📂 Project Structure
+
+```
+AdventureWorks-PowerBI/
+│
+├── Dataset/
+│   ├── Customers.csv
+│   ├── Products.csv
+│   ├── Sales.csv
+│   ├── Returns.csv
+│   └── Calendar.csv
+│
+├── PowerBI/
+│   └── AdventureWorks Dashboard.pbix
+│
+├── Images/
+│   ├── Dashboard.png
+│   ├── DataModel.png
+│   └── ReportPages.png
+│
+└── README.md
+```
+
+---
+
+# 🎯 Final Result
+
+This project demonstrates the complete Business Intelligence lifecycle using Microsoft Power BI—from raw data ingestion and transformation to advanced analytics and executive dashboard development.
+
+The final solution follows industry best practices in data preparation, modeling, DAX development, and visualization, resulting in a scalable, interactive, and production-ready reporting system.
