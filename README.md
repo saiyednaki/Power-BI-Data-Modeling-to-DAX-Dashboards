@@ -256,7 +256,7 @@ Dieses Projekt demonstriert den vollständigen Business-Intelligence-Lebenszyklu
 
 ---
 
-# Projektstruktur
+# Repository Struktur
 
 ```
 AdventureWorks-PowerBI/
@@ -289,6 +289,8 @@ AdventureWorks-PowerBI/
 
 - 💼 LinkedIn: https://linkedin.com/in/saiyed-naki
 - 💻 GitHub: https://github.com/saiyednaki
+
+---
 
 # English
 
