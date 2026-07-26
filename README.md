@@ -250,6 +250,11 @@ Diese Lösung ermöglicht es den Beteiligten:
 - Mobile Optimierung
 
 ---
+# Endergebnis
+
+Dieses Projekt demonstriert den vollständigen Business-Intelligence-Lebenszyklus mit Microsoft Power BI – von der Aufnahme und Transformation der Rohdaten bis hin zu fortgeschrittener Analyse und der Entwicklung von Dashboards für Führungskräfte.
+
+---
 
 # Projektstruktur
 
@@ -276,9 +281,14 @@ AdventureWorks-PowerBI/
 
 ---
 
-# Endergebnis
+# Kontakt
 
-Dieses Projekt demonstriert den vollständigen Business-Intelligence-Lebenszyklus mit Microsoft Power BI – von der Aufnahme und Transformation der Rohdaten bis hin zu fortgeschrittener Analyse und der Entwicklung von Dashboards für Führungskräfte.
+**Naki Saiyed**
+
+**Business Intelligence & Data Analyst**
+
+- 💼 LinkedIn: https://linkedin.com/in/saiyed-naki
+- 💻 GitHub: https://github.com/saiyednaki
 
 # English
 
@@ -537,7 +547,13 @@ This solution enables stakeholders to:
 
 ---
 
-# Project Structure
+# Final Result
+
+This project demonstrates the complete Business Intelligence lifecycle using Microsoft Power BI—from raw data ingestion and transformation to advanced analytics and executive dashboard development.
+
+The final solution follows industry best practices in data preparation, modeling, DAX development, and visualization, resulting in a scalable, interactive, and production-ready reporting system.
+
+# Repository Structure
 
 ```
 AdventureWorks-PowerBI/
@@ -562,8 +578,11 @@ AdventureWorks-PowerBI/
 
 ---
 
-# Final Result
+# Connect With Me
 
-This project demonstrates the complete Business Intelligence lifecycle using Microsoft Power BI—from raw data ingestion and transformation to advanced analytics and executive dashboard development.
+**Naki Saiyed**
 
-The final solution follows industry best practices in data preparation, modeling, DAX development, and visualization, resulting in a scalable, interactive, and production-ready reporting system.
+**Business Intelligence & Data Analyst**
+
+- 💼 LinkedIn: https://linkedin.com/in/saiyed-naki
+- 💻 GitHub: https://github.com/saiyednaki
