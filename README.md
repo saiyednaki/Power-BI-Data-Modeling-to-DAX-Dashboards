@@ -1,4 +1,4 @@
-# AdventureWorks Business Intelligence Dashboard | End-to-End Power BI Project
+# AdventureWorks Business Intelligence Dashboard
 
 # Deutsch
 
