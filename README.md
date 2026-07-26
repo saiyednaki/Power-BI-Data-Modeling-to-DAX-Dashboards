@@ -1,4 +1,4 @@
-# AdventureWorks Business Intelligence Dashboard
+# How Can Interactive Dashboards Improve Business Decisions? | Power BI
 
 # Deutsch
 
